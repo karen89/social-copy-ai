@@ -1,0 +1,103 @@
+/* primeiro vem o reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* root = variáveis de cores */
+:root {
+    --fundo: #0f0f0f;
+    --fundo-card: #1a1a2e;
+    --texto-principal: #f1f1f1;
+    --texto-secundario: #a0a0b0;
+    --cor-de-destaque: #7c3aed;
+    --cor-destaque-hover: #9d5ff5;
+    --cor-do-botao: #7c3aed;
+} 
+
+/*:root {
+    --fundo: #0a0e1a;
+    --fundo-card: #111827;
+    --texto-principal: #e2e8f0;
+    --texto-secundario: #64748b;
+    --cor-de-destaque: #3b82f6;
+    --cor-destaque-hover: #60a5fa;
+    --cor-do-botao: #3b82f6;
+} */
+
+/* elementos globais body, h1, p */
+body {
+    background-color: var(--fundo);
+    color: var(--texto-principal);
+}
+
+h1 {
+    margin-bottom: 16px;
+}
+
+main {
+    text-align: center;
+    padding: 10px;
+    margin: 60px auto;
+    max-width: 600px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--cor-do-botao);
+    color: var(--texto-principal);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    
+    background-color: var(--cor-destaque-hover);
+}
+
+#descricao {
+    background-color: var(--fundo-card);
+    color: var(--texto-secundario);
+    resize: none;
+    width: 100%;
+    padding: 12px;
+    height: 120px;
+    border-radius: 15px;
+}
+
+#redes-sociais, #tons {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--fundo);
+    color: var(--texto-principal);
+}
+
+#resultado {
+    margin-top: 20px;
+    background-color: var(--fundo-card);
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+}
+
+#texto-gerado {
+    color: var(--texto-secundario);
+}
+
+
